@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "author_name": "John Doe",
+    "blog_title": "Exploring the Wonders of AI",
+    "blog-author-img": "/src/images/Ellipse 1.png",
+    "blog-cover-img": "/src/images/Rectangle 1 (1).png",
+    "read_time": "10 minutes",
+    "publish_date": "2023-01-15"
+  },
+  {
+    "id": 2,
+    "author_name": "John Doe",
+    "blog_title": "Exploring the Wonders of AI",
+    "blog-author-img": "/src/images/Ellipse 1 (2).png",
+    "blog-cover-img": "/src/images/Rectangle 1 (2).png",
+    "read_time": "10 minutes",
+    "publish_date": "2023-01-15"
+  },
+  {
+    "id": 3,
+    "author_name": "John Doe",
+    "blog_title": "Exploring the Wonders of AI",
+    "blog-author-img": "/src/images/Ellipse 1 (1).png",
+    "blog-cover-img": "/src/images/Rectangle 1.png",
+    "read_time": "10 minutes",
+    "publish_date": "2023-01-15"
+  },
+  {
+    "id": 4,
+    "author_name": "John Doe",
+    "blog_title": "Exploring the Wonders of AI",
+    "blog-author-img": "/src/images/Ellipse 1.png",
+    "blog-cover-img": "/src/images/Ellipse 1 (2).png",
+    "read_time": "10 minutes",
+    "publish_date": "2023-01-15"
+  }
+]
