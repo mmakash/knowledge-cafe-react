@@ -1,9 +1,12 @@
 import React from 'react';
+import Header from './Component/Header';
+import Card from './Component/Card';
 
 const App = () => {
   return (
     <div>
-      <h1>Hello World</h1>
+      <Header />
+      <Card />
     </div>
   );
 };
