@@ -18,17 +18,24 @@ const Card = () => {
   }, []);
 
   const handleBlog = (blogData) => {
-    setSelectBlog((prevBlogs) => [...prevBlogs, blogData]);
-       // Trigger a toast notification
-       toast.success("Added to Bookmarks", {
+    // Check if a toast is currently active
+    if (!toast.isActive("bookmarkToast")) {
+      setSelectBlog((prevBlogs) => [...prevBlogs, blogData]);
+  
+      // Trigger a toast notification
+      toast.success("Added to Bookmarks", {
         position: "top-right",
-        autoClose: 2000, // Close the notification after 2 seconds
+        autoClose: 2000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
         draggable: true,
+        toastId: "bookmarkToast", // Unique ID for this toast
       });
+    }
+    
   };
+  
 
   const handleMarkAsRead = (data) => {
     setReadTime(readTime + data.read_time);
