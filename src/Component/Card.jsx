@@ -5,6 +5,7 @@ import Blog from "./Blog";
 const Card = () => {
   const [cards, setCard] = useState([]);
   const [selectBlog, setSelectBlog] = useState([]);
+  const [readTime, setReadTime] = useState(0);
 
   useEffect(() => {
     (async () => {
@@ -17,6 +18,10 @@ const Card = () => {
   const handleBlog = (blogData) => {
     setSelectBlog((prevBlogs) => [...prevBlogs, blogData]);
   };
+
+  const handleMarkAsRead = (data) => {
+    setReadTime(readTime + data.read_time);
+  }
 
   return (
     <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
@@ -46,15 +51,15 @@ const Card = () => {
               </div>
               <h2 className="card-title">{card.blog_title}</h2>
               <div>
-                <a className="underline text-blue-500" href="">
+                <button onClick={() => handleMarkAsRead(card)} className="underline text-blue-500" href="">
                   Mark As Read
-                </a>
+                </button>
               </div>
             </div>
           </div>
         ))}
       </div>
-      <Blog selectBlog={selectBlog} />
+      <Blog selectBlog={selectBlog} readTime={readTime}/>
     </div>
   );
 };

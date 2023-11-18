@@ -1,15 +1,9 @@
 /* eslint-disable react/prop-types */
-import React, { useEffect, useState } from "react";
 
-const Blog = ({ selectBlog }) => {
-  const [totalReadTime,setTotalReadTime] = useState(0);
-  useEffect(() => {
-    const sum = selectBlog.reduce((total, blog) => total + blog.read_time, 0);
-    setTotalReadTime(sum);
-  },[selectBlog])
+const Blog = ({ selectBlog,readTime }) => {
   return (
     <div>
-      <h1 className="text-3xl font-bold m-3">Total Read Time: {totalReadTime}</h1>
+      <h1 className="text-3xl font-bold m-3">Total Read Time: {readTime}</h1>
       <div className="overflow-x-auto">
         <table className="table w-2/3 my-8 bg-stone-400">
           <thead>
