@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { CiBookmark } from "react-icons/ci";
 import Blog from "./Blog";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Card = () => {
   const [cards, setCard] = useState([]);
@@ -17,6 +19,15 @@ const Card = () => {
 
   const handleBlog = (blogData) => {
     setSelectBlog((prevBlogs) => [...prevBlogs, blogData]);
+       // Trigger a toast notification
+       toast.success("Added to Bookmarks", {
+        position: "top-right",
+        autoClose: 2000, // Close the notification after 2 seconds
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      });
   };
 
   const handleMarkAsRead = (data) => {
