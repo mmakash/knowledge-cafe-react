@@ -8,6 +8,7 @@ const Card = () => {
   const [cards, setCard] = useState([]);
   const [selectBlog, setSelectBlog] = useState([]);
   const [readTime, setReadTime] = useState(0);
+  const [addedBlogs, setAddedBlogs] = useState([]);
 
   useEffect(() => {
     (async () => {
@@ -18,10 +19,21 @@ const Card = () => {
   }, []);
 
   const handleBlog = (blogData) => {
-    // Check if a toast is currently active
-    if (!toast.isActive("bookmarkToast")) {
+    // Check if the blog has already been added
+    if (addedBlogs.includes(blogData.id)) {
+      toast.warning("Blog already added to bookmarks", {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      });
+    } else {
+      // Add the blog and update the addedBlogs state
       setSelectBlog((prevBlogs) => [...prevBlogs, blogData]);
-  
+      setAddedBlogs((prevAddedBlogs) => [...prevAddedBlogs, blogData.id]);
+
       // Trigger a toast notification
       toast.success("Added to Bookmarks", {
         position: "top-right",
@@ -33,7 +45,6 @@ const Card = () => {
         toastId: "bookmarkToast", // Unique ID for this toast
       });
     }
-    
   };
   
 
