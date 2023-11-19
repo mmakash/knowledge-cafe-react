@@ -3,8 +3,8 @@
     "id": 1,
     "author_name": "Mr.Raja",
     "blog_title": "How to get your first job as a self-taught programmer",
-    "blog-author-img": "/src/images/Ellipse 1.png",
-    "blog-cover-img": "/src/images/Rectangle 1 (1).png",
+    "blog-author-img": "/images/Ellipse 1.png",
+    "blog-cover-img": "/images/Rectangle 1 (1).png",
     "read_time": 6,
     "publish_date": "2023-01-15"
   },
@@ -12,8 +12,8 @@
     "id": 2,
     "author_name": "Mrs.Sara",
     "blog_title": "How to get your first job as a self-taught programmer",
-    "blog-author-img": "/src/images/Ellipse 1 (2).png",
-    "blog-cover-img": "/src/images/Rectangle 1 (2).png",
+    "blog-author-img": "/images/Ellipse 1 (2).png",
+    "blog-cover-img": "/images/Rectangle 1 (2).png",
     "read_time": 7,
     "publish_date": "2023-01-15"
   },
@@ -21,8 +21,8 @@
     "id": 3,
     "author_name": "Mr.Mostofa",
     "blog_title": "How to get your first job as a self-taught programmer",
-    "blog-author-img": "/src/images/Ellipse 1 (1).png",
-    "blog-cover-img": "/src/images/Rectangle 1.png",
+    "blog-author-img": "/images/Ellipse 1 (1).png",
+    "blog-cover-img": "/images/Rectangle 1.png",
     "read_time": 8,
     "publish_date": "2023-01-15"
   },
@@ -30,8 +30,8 @@
     "id": 4,
     "author_name": "Mrs.Mina",
     "blog_title": "How to get your first job as a self-taught programmer",
-    "blog-author-img": "/src/images/Ellipse 1.png",
-    "blog-cover-img": "/src/images/Rectangle 1 (1).png",
+    "blog-author-img": "/images/Ellipse 1.png",
+    "blog-cover-img": "/images/Rectangle 1 (1).png",
     "read_time": 4,
     "publish_date": "2023-01-15"
   }

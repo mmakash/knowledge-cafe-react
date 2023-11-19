@@ -15,6 +15,7 @@ const Card = () => {
       const response = await fetch("/FakeDB/data.json");
       const data = await response.json();
       setCard(data);
+      console.log(data);
     })();
   }, []);
 
